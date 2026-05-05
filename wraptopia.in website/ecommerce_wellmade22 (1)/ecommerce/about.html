@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Wellmade_22</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!-- NAVBAR (offcanvas only, no collapse duplicate) -->
+<nav class="navbar bg sticky-top shadow-sm">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand" href="./index.html"><img src="assets/logomain.jpeg" height="80px" width="auto"></a>
+
+    <!-- Desktop nav links (hidden on mobile) -->
+    <ul class="navbar-nav flex-row gap-3 d-none d-lg-flex me-3">
+      <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link active" href="./about.html">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="./project.html">Project</a></li>
+    </ul>
+
+    <div class="d-flex align-items-center gap-3 ms-auto">
+      <a href="./index.html" class="btn cart-btn position-relative" title="Go to Shop">
+        <i class="bi bi-bag fs-5"></i>
+      </a>
+      <!-- Hamburger (mobile only) -->
+      <button class="navbar-toggler custom-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Offcanvas Menu -->
+<div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu">
+  <div class="offcanvas-header">
+    <img src="assets/logo.png" height="55px" width="auto">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav gap-2">
+      <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link active" href="./about.html">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="./project.html">Project</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main class="flex-grow-1 d-flex align-items-center">
+  <div class="container py-5">
+    <div class="row align-items-center justify-content-center g-5">
+      <!-- Text -->
+      <div class="col-12 col-lg-6">
+        <h1 class="display-4 fw-bold lh-1 mb-4 brand-title">About Us</h1>
+        <p class="fs-5"><strong>​Our Story:</strong> <i style="text-decoration: underline;">From the Heart, By the Hand</i></p>
+        <p class="fs-5">​At Wraptopia.in, we believe a gift shouldn't just be an object—it should be an emotion.
+​The journey of Wraptopia began in 2026 when I noticed a significant gap in the market. While there were plenty of mass-produced items available, the soul of gifting—the personal touch—was missing. People were looking for something unique, like handcrafted bouquets and personalized gifts that truly spoke to the recipient, but these were nowhere to be found. I started this business to bridge that gap and bring back the charm of handmade artistry.</p>
+<p class="fs-5"><strong>We Do What We Do</strong></p>
+<p class="fs-5">Every product you see at Wraptopia, from our intricate crochet flowers to our curated hampers, is crafted with immense care and dedication. For me, there is a special joy in creating something with my own hands to make someone else's day unforgettable.
+</p>
+<p class="fs-5">​When you choose a gift from us, you aren't just buying a product; you are giving a personal experience. You are showing someone that their gift was made specifically for them, with time, effort, and love.</p>
+        <a href="./index.html" class="btn add-cart-btn mt-3 px-4">Shop Now →</a>
+      </div>
+      <!-- Image -->
+      <div class="col-10 col-sm-7 col-lg-4">
+        <img src="./assets/about.jpg" alt="About Wellmade_22" class="img-fluid rounded-3 shadow w-100">
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER pinned to bottom -->
+<footer class="site-footer py-4 text-center mt-auto">
+  <p class="mb-1">📞 +91 8815920322 &nbsp;|&nbsp; ✉️ wraptopia.in@gmail.com</p>
+  <hr class="mx-auto" style="width:200px;">
+  <p class="text-muted small mb-0">© 2026 Wraptopia.in All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
